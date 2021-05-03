@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="UFT-8">
+        <title>JabTyper</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <style>
+            *{
+                font-size: 18px;
+            }
+            .titulo{
+                border: 3px solid black;
+                
+            }
+            .titulo2{
+                border: 3px solid black;
+                background-color: rgb(35, 69, 221);
+            }
+
+        </style>
+        </style>
+        <div class="container titulo" >
+            <div class="titulo2">
+            <h1 class="col-md-offset-5" >JabTyper</h1>
+            </div>
+            <br/><br/>
+            <div class="row justify-content-center" >
+                <div class="col-md-6">
+                <br/>
+                <input type="text" id="nome"  placeholder="Nome">
+                <br/><br/>
+                <p class="frase">Digitei várias palavras</p>
+                <ul class="informacoes">
+                <li><span id ="tamanho-frase"></span> palavras</li>
+                <li><span id ="tempo-jogo">15</span> segundos</li>
+                </ul>
+
+                <textarea id="campo-digitacao" cols="60" rows="8"></textarea>
+                
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <ul>   
+                        <li><span id="caracteres-digitados">0</span> caracteres digitados</li>
+                        <li><span id="palavras-digitadas">0</span> palavras digitadas</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 justify-content-end">
+                        <button class=" botao-reiniciar btn btn-primary">Reset</button>
+                    </div>
+                </div>
+               
+                <br/></div>
+                <div class="col-md-6">
+                
+                <h2>Placar</h2>
+                <table id="tabela-resultado" border="1">
+                    <thead>
+                        <th padding="20px">Usuário  </th>
+                        <th>Número de palavras</th>
+                    </thead>
+                </table>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </body>
+</html>
